@@ -1,0 +1,62 @@
+.fileinput{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.label{
+    background-color: red;
+    padding: 1rem;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.label:hover{
+    background-color: blue;
+    outline: 2px dotted #000;
+}
+.box{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.box .card-1{
+    width: 250px;
+    position: absolute;
+    border: 1px solid green;
+    height: 250px;
+    z-index: 5;
+    left: 50px;
+    top: 100px;
+    box-shadow: 9px 14px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.box .card-2{
+    width: 250px;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    border: 1px solid red;
+    height: 250px;
+    box-shadow: 9px 14px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.box:hover>.card-1,.box:hover>.card-2{
+    position: absolute;
+    transition: 1s all;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+}
+.box:hover>.card-2{
+    z-index: 10;
+}
+.section{
+    width: 1200px;
+    padding: 1rem;
+    position: sticky;
+    top: 20px;
+    text-align: center;
+    box-shadow: 9px 14px 8px 0px rgba(34, 60, 80, 0.2);
+    margin: 50px auto;
+}
